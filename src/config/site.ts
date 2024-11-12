@@ -1,7 +1,7 @@
 import { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  name: "Starter Kit",
+  name: "Logo",
   title: "Turn visitors into customers with popup notifications",
   description:
     "Deliver attention-grabbing pop-up notifications that present visitors with hard truths, driving stronger engagement and boosting conversions.",

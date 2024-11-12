@@ -8,7 +8,7 @@ const NavItems = () => {
         <li key={link.label}>
           <Link
             href={link.route}
-            className="flex-center font-normal text-lg whitespace-normal text-foreground"
+            className="flex-center font-normal whitespace-normal text-foreground"
           >
             {link.label}
           </Link>
