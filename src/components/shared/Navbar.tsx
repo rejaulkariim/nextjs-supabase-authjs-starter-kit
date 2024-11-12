@@ -1,12 +1,12 @@
 import Logo from "@/components/shared/Logo";
 import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
 import MobileNav from "@/components/shared/MobileNav";
+import NavItems from "@/components/shared/Navitems";
 import UserAccountNav from "@/components/shared/UserAccountNav";
 import { buttonVariants } from "@/components/ui/button";
 import { auth } from "@/lib/auth";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import NavItems from "./Navitems";
 
 const Navbar = async () => {
   // const user = await getUserFromDB();
@@ -16,7 +16,7 @@ const Navbar = async () => {
   const user = session?.user;
 
   return (
-    <header className="h-16 border-b fixed inset-0 inset-x-0 z-50 w-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="h-16 border-b fixed inset-0 inset-x-0 z-50 w-full border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <MaxWidthWrapper>
         <nav className="h-full w-full flex justify-between items-center">
           {/* Logo on the left */}
