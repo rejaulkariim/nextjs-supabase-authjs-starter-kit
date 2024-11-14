@@ -1,15 +1,15 @@
 export const headerLinks = [
   {
-    label: "How it works",
-    route: "/howitworks",
+    label: "Link 1",
+    route: "#",
   },
   {
-    label: "Wall of love",
-    route: "/#walloflove",
+    label: "Link 2",
+    route: "#",
   },
   {
-    label: "Pricing",
-    route: "/#pricing",
+    label: "Link 3",
+    route: "#",
   },
 ];
 

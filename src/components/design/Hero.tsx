@@ -20,8 +20,8 @@ const Hero = () => {
               </p>
             </div>
 
+            {/* First person action oriented CTA */}
             <div>
-              {/* First person action oriented CTA */}
               <Link
                 href="#"
                 className={cn(

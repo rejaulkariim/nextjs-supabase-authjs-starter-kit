@@ -24,13 +24,9 @@ const Navbar = async () => {
             <Logo />
           </div>
 
-          {/* Centered NavItems */}
-          <div className="flex justify-center items-center">
-            <NavItems />
-          </div>
-
           {/* UserAccountNav or Login on the right */}
-          <div className="hidden w-44 md:flex justify-end items-center space-x-4">
+          <div className="hidden md:flex justify-end items-center space-x-10">
+            <NavItems />
             {user ? (
               <UserAccountNav user={user} />
             ) : (

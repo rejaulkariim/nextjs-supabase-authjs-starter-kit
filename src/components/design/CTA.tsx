@@ -1,17 +1,31 @@
 import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { buttonVariants } from "../ui/button";
 
 const CTA = () => {
   return (
     <section className="py-10 md:py-20">
       <MaxWidthWrapper className="max-w-6xl mx-auto">
         <div className="text-center space-y-4 border py-20 px-8 rounded-2xl bg-card">
-          <h2 className="tracking-tight text-balance font-extrabold !leading-tight text-card-foreground text-3xl md:text-5xl">
-            Call to action
+          <h2 className="text-2xl md:text-3xl font-bold">
+            Ready to get started?
           </h2>
-          <p className="max-w-xl mx-auto text-lg text-card-foreground">
-            description of what you can do
+          <p className="max-w-xl mx-auto text-card-foreground">
+            Schadule a free consultation with our team and let&apos;s make
+            things happened.
           </p>
-          button
+          <Link
+            href="#"
+            className={cn(
+              buttonVariants({
+                size: "lg",
+                className: "button",
+              })
+            )}
+          >
+            First person action oriented CTA
+          </Link>
         </div>
       </MaxWidthWrapper>
     </section>
