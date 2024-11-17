@@ -7,6 +7,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { auth } from "@/lib/auth";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import ModeToggle from "../theme/ModeToggle";
 
 const Navbar = async () => {
   // const user = await getUserFromDB();
@@ -18,15 +19,14 @@ const Navbar = async () => {
   return (
     <header className="h-16 border-b fixed inset-0 inset-x-0 z-50 w-full border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <MaxWidthWrapper>
-        <nav className="h-full w-full flex justify-between items-center">
+        <nav className="h-full flex justify-between items-center">
           {/* Logo on the left */}
-          <div className="w-44">
-            <Logo />
-          </div>
+          <Logo />
 
           {/* UserAccountNav or Login on the right */}
-          <div className="hidden md:flex justify-end items-center space-x-10">
+          <div className="hidden md:flex justify-end items-center space-x-8">
             <NavItems />
+            <ModeToggle />
             {user ? (
               <UserAccountNav user={user} />
             ) : (
@@ -35,7 +35,7 @@ const Navbar = async () => {
               </Link>
             )}
           </div>
-          <div className="md:hidden w-44 flex justify-end items-center space-x-4">
+          <div className="md:hidden flex justify-end items-center space-x-4">
             {user ? <UserAccountNav user={user} /> : <MobileNav />}
           </div>
         </nav>
