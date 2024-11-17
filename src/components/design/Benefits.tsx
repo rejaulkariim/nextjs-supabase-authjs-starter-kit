@@ -7,12 +7,8 @@ const Benefits = () => {
       <MaxWidthWrapper>
         {/* Section Title */}
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl font-bold text-gray-900">
-            The Benefits of Working with Us
-          </h2>
-          <p className="text-lg text-gray-700">
-            Discover how our solutions can propel your business forward
-          </p>
+          <h2 className="text-4xl font-bold">Save time ship 10x fast</h2>
+          <p className="">Focus on whats metter building the features.</p>
         </div>
 
         {/* Benefits List */}

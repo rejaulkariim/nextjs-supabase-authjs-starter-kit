@@ -21,11 +21,11 @@ const HowItWorks = () => {
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-gray-800">
-                  Book/Schedule
+                  Clone the repository
                 </h3>
                 <p className="text-gray-600">
-                  Quis autem vel eum iure reprehenderit in velit esse nihil
-                  molestiae vel illum dolorem fugiat voluptas nulla pariatur.
+                  Simply clone the repository to your local machine and
+                  everyting is ready.
                 </p>
               </div>
             </div>
@@ -37,11 +37,11 @@ const HowItWorks = () => {
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-gray-800">
-                  We’ll Get to Work
+                  Customization
                 </h3>
                 <p className="text-gray-600">
-                  Quis autem vel eum iure reprehenderit in velit esse nihil
-                  molestiae vel illum dolorem fugiat voluptas nulla pariatur.
+                  All the nacessery file has been added so you can just
+                  customize it of your business needs.
                 </p>
               </div>
             </div>
@@ -52,12 +52,9 @@ const HowItWorks = () => {
                 03
               </div>
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Happily Ever After!
-                </h3>
+                <h3 className="text-xl font-semibold text-gray-800">Deploy</h3>
                 <p className="text-gray-600">
-                  Quis autem vel eum iure reprehenderit in velit esse nihil
-                  molestiae vel illum dolorem fugiat voluptas nulla pariatur.
+                  Finally deploy it to the internet.
                 </p>
               </div>
             </div>

@@ -12,11 +12,11 @@ const Solution = () => {
                 Introduce your business as the solutions.
               </h1>
               <p className="font-normal text-foreground">
-                Our product/service is designed to address the challenges you're
-                facing by offering a comprehensive and effective solution. We
-                take the time to fully understand your needs and craft a
-                customized approach that targets the root cause of the problem.
-                Through innovative technology, expert support, and a
+                Our product/service is designed to address the challenges
+                you&lsquo;re facing by offering a comprehensive and effective
+                solution. We take the time to fully understand your needs and
+                craft a customized approach that targets the root cause of the
+                problem. Through innovative technology, expert support, and a
                 user-friendly experience, we ensure that our solution not only
                 resolves the issue at hand but also optimizes efficiency,
                 reduces costs, and improves long-term results.

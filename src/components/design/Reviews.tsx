@@ -1,4 +1,5 @@
 import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
+import Image from "next/image";
 
 const Reviews = () => {
   const reviews = [
@@ -44,9 +45,11 @@ const Reviews = () => {
               className="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105"
             >
               <div className="flex items-center space-x-4 mb-6">
-                <img
+                <Image
                   src={review.image}
                   alt={review.name}
+                  width={64}
+                  height={64}
                   className="w-16 h-16 rounded-full object-cover"
                 />
                 <div>

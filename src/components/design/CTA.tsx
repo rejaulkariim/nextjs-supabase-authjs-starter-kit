@@ -6,9 +6,9 @@ import { buttonVariants } from "../ui/button";
 const CTA = () => {
   return (
     <section className="py-10 md:py-20">
-      <MaxWidthWrapper className="max-w-6xl mx-auto">
+      <MaxWidthWrapper>
         <div className="text-center space-y-4 border py-20 px-8 rounded-2xl bg-card">
-          <h2 className="text-2xl md:text-3xl font-bold">
+          <h2 className="text-2xl md:text-4xl font-bold">
             Ready to get started?
           </h2>
           <p className="max-w-xl mx-auto text-card-foreground">
