@@ -3,7 +3,7 @@ import MaxWidthWrapper from "../shared/MaxWidthWrapper";
 
 const Solution = () => {
   return (
-    <section className="flex items-center justify-center min-h-screen bg-background">
+    <section className="section-padding">
       <MaxWidthWrapper>
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-20">
           <div className="w-full md:w-1/2 space-y-4">

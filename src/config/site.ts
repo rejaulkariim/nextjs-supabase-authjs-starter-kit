@@ -1,10 +1,9 @@
 import { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  name: "Logo",
-  title: "Turn visitors into customers with popup notifications",
+  name: "Boilerplate",
   description:
-    "Deliver attention-grabbing pop-up notifications that present visitors with hard truths, driving stronger engagement and boosting conversions.",
+    "Everthing you need to ship your startup 10x faster. Build your startup with the best templates, UI components, and tools.",
   url: "https://appbrews.co",
   ogImage: "https://appbrews.co/og.png",
   links: {

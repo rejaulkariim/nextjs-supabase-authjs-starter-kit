@@ -1,6 +1,6 @@
 "use client";
 
-import { Moon, Sun } from "lucide-react";
+import { Laptop, Moon, MoonIcon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
@@ -24,13 +24,16 @@ const ModeToggle = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
+          <Sun size={20} className="mr-2 h-4 w-4" />
+          <span>Light Theme</span>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
+          <MoonIcon size={20} className="mr-2 h-4 w-4" />
+          <span>Dark Theme</span>
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
+          <Laptop size={20} className="mr-2 h-4 w-4" />
+          <span>Follow System</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

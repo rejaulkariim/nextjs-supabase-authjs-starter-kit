@@ -1,20 +1,18 @@
 import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import SectionHeader from "../shared/SectionHeader";
 import { buttonVariants } from "../ui/button";
 
 const CTA = () => {
   return (
-    <section className="py-10 md:py-20">
+    <section className="section-padding">
       <MaxWidthWrapper>
-        <div className="text-center space-y-4 border py-20 px-8 rounded-2xl bg-card">
-          <h2 className="text-2xl md:text-4xl font-bold">
-            Ready to get started?
-          </h2>
-          <p className="max-w-xl mx-auto text-card-foreground">
-            Schadule a free consultation with our team and let&apos;s make
-            things happened.
-          </p>
+        <div className="text-center space-y-4 border border-border/60 py-20 px-8 rounded-2xl bg-card">
+          <SectionHeader
+            title="Call to action"
+            description="Add a call to action details to encourage users to take action."
+          />
           <Link
             href="#"
             className={cn(

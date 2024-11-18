@@ -1,63 +1,31 @@
 import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
+import { howItWorks } from "@/constants";
 import Image from "next/image";
+import SectionHeader from "../shared/SectionHeader";
 
 const HowItWorks = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="section-padding">
       <MaxWidthWrapper>
-        {/* Section Title */}
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl font-semibold text-gray-900">How It Works</h2>
-        </div>
+        <SectionHeader
+          title="How It Works"
+          description="Explain how it works"
+        />
 
-        {/* How It Works Steps */}
-        <div className="flex flex-col lg:flex-row justify-between gap-12">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-12 mt-10">
           {/* Left Column (Text Content) */}
           <div className="lg:w-1/2 space-y-10">
-            {/* Step 1 */}
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 text-3xl font-bold text-green-500">
-                01
+            {howItWorks.map((step) => (
+              <div key={step.step} className="flex items-start space-x-4">
+                <div className="flex-shrink-0 text-3xl font-bold text-green-500">
+                  {step.step}
+                </div>
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold">{step.title}</h3>
+                  <p className="text-muted-foreground">{step.description}</p>
+                </div>
               </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Clone the repository
-                </h3>
-                <p className="text-gray-600">
-                  Simply clone the repository to your local machine and
-                  everyting is ready.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 text-3xl font-bold text-green-500">
-                02
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Customization
-                </h3>
-                <p className="text-gray-600">
-                  All the nacessery file has been added so you can just
-                  customize it of your business needs.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 text-3xl font-bold text-green-500">
-                03
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-gray-800">Deploy</h3>
-                <p className="text-gray-600">
-                  Finally deploy it to the internet.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* Right Column (Image) */}

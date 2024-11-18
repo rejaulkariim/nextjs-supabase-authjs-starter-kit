@@ -5,7 +5,7 @@ type SectionHeaderProps = {
 
 const SectionHeader = ({ title, description }: SectionHeaderProps) => {
   return (
-    <div className="text-center space-y-4 mb-12">
+    <div className="text-center space-y-4 my-4">
       <h2 className="tracking-tight font-extrabold !leading-tight text-foreground text-3xl md:text-4xl">
         {title}
       </h2>

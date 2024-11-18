@@ -20,23 +20,24 @@ const Navbar = async () => {
     <header className="h-14 border-b fixed inset-0 inset-x-0 z-50 w-full border-border/60 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <MaxWidthWrapper>
         <nav className="h-full flex justify-between items-center">
-          {/* Logo on the left */}
           <Logo />
 
           {/* UserAccountNav or Login on the right */}
-          <div className="hidden md:flex justify-end items-center space-x-8">
+          <div className="hidden md:flex justify-end items-center space-x-10">
             <NavItems />
-            <ModeToggle />
-            {user ? (
-              <UserAccountNav user={user} />
-            ) : (
-              <Link href="/auth/login" className={cn(buttonVariants())}>
-                Login
-              </Link>
-            )}
-          </div>
-          <div className="md:hidden flex justify-end items-center space-x-4">
-            {user ? <UserAccountNav user={user} /> : <MobileNav />}
+            <div className="flex items-center gap-4">
+              <ModeToggle />
+              {user ? (
+                <UserAccountNav user={user} />
+              ) : (
+                <Link href="/auth/login" className={cn(buttonVariants())}>
+                  Login
+                </Link>
+              )}
+            </div>
+            <div className="md:hidden flex justify-end items-center space-x-4">
+              {user ? <UserAccountNav user={user} /> : <MobileNav />}
+            </div>
           </div>
         </nav>
       </MaxWidthWrapper>

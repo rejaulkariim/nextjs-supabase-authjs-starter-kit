@@ -5,14 +5,14 @@ import { Card } from "../ui/card";
 
 const Symptoms = () => {
   return (
-    <section className="py-10 md:py-26 lg:py-24">
+    <section className="section-padding">
       <MaxWidthWrapper>
         <SectionHeader
           title="Point out the problem"
           description="Does this sound familiar?"
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
           {symptoms.map((symptom) => (
             <Card
               key={symptom.title}
