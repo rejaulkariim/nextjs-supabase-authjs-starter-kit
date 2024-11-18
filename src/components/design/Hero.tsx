@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-center min-h-screen bg-background">
+    <section className="flex items-center justify-center min-h-screen border-b border-border/60">
       <MaxWidthWrapper>
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-20">
           <div className="w-full md:w-1/2 space-y-4">

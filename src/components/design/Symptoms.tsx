@@ -14,9 +14,12 @@ const Symptoms = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {symptoms.map((symptom) => (
-            <Card key={symptom.title} className="p-6 rounded-lg">
+            <Card
+              key={symptom.title}
+              className="p-6 rounded-lg border-border/60"
+            >
               <h3 className="text-xl font-semibold mb-4">{symptom.title}</h3>
-              <p className="">{symptom.description}</p>
+              <p className="text-muted-foreground">{symptom.description}</p>
             </Card>
           ))}
         </div>
