@@ -37,3 +37,21 @@ export const footerResourcesLinks = [
     route: "https://poopupsupply.vercel.app",
   },
 ];
+
+export const symptoms = [
+  {
+    title: "Symptom 1",
+    description:
+      "A brief description of the first symptom goes here. This can help the user understand the issue.",
+  },
+  {
+    title: "Symptom 2",
+    description:
+      "A brief description of the second symptom goes here. This can help the user understand the issue.",
+  },
+  {
+    title: "Symptom 3",
+    description:
+      "A brief description of the third symptom goes here. This can help the user understand the issue.",
+  },
+];
